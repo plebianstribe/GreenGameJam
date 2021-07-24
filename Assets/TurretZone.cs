@@ -7,6 +7,7 @@ public class TurretZone : MonoBehaviour
     public GameObject turret;
     public GameObject turretZone;
     public float rotationSpeed = 5.0f;
+    public float suctionSpeed = 1.0f;
 
     // Start is called before the first frame update
     void Start()
