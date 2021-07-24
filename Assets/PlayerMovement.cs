@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     short playerNumber = 1;
     public float playerSpeed = 1;
+    public Animator anim;
+    public bool isSitting = true;
 
     // Start is called before the first frame update
     void Start()
@@ -23,21 +25,27 @@ public class PlayerMovement : MonoBehaviour
     }
     void PlayerInput()
     {
-        if(playerNumber == 1)
+        if(isSitting)
         {
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(KeyCode.UpArrow))
             {
-                transform.Translate(0, playerSpeed * Time.deltaTime, 0);
+                if (anim.GetBool("sitting")){
+                    anim.SetBool("sitting", false);
+                }
+                else
+                {
+                    anim.SetBool("sitting", true);
+                }
             }
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetKey(KeyCode.LeftArrow))
             {
                 transform.Translate(-playerSpeed * Time.deltaTime, 0, 0);
             }
-            if (Input.GetKey(KeyCode.S))
+            if (Input.GetKey(KeyCode.DownArrow))
             {
                 transform.Translate(0, -playerSpeed * Time.deltaTime, 0);
             }
-            if (Input.GetKey(KeyCode.D))
+            if (Input.GetKey(KeyCode.RightArrow))
             {
                 transform.Translate(playerSpeed * Time.deltaTime, 0, 0);
             }
