@@ -1,0 +1,5 @@
+C:\Users\Sim Yew Chong\documents\github\greengamejam\assets\obj\Debug\net5.0\assets.csproj.AssemblyReference.cache
+C:\Users\Sim Yew Chong\documents\github\greengamejam\assets\obj\Debug\net5.0\assets.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sim Yew Chong\documents\github\greengamejam\assets\obj\Debug\net5.0\assets.AssemblyInfoInputs.cache
+C:\Users\Sim Yew Chong\documents\github\greengamejam\assets\obj\Debug\net5.0\assets.AssemblyInfo.cs
+C:\Users\Sim Yew Chong\documents\github\greengamejam\assets\obj\Debug\net5.0\assets.csproj.CoreCompileInputs.cache

@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Trash1
+  - Animal
+  - Trash
   layers:
   - Default
   - TransparentFX
@@ -41,6 +43,9 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 3364963685
+    locked: 0
+  - name: Animals
+    uniqueID: 579970449
     locked: 0
   - name: Default
     uniqueID: 0
