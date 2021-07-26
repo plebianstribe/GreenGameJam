@@ -487,8 +487,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 1
+  ship: {fileID: 0}
   anim: {fileID: 1286684550}
-  isSitting: 1
 --- !u!212 &1286684549
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -662,7 +662,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -930003611
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7bb20618623b6af47909524a25a7e16d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
