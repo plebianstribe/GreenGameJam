@@ -25,25 +25,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if(anim.GetBool("sitting"))
         {
-            if (Input.GetKey(KeyCode.UpArrow))
-            {
-                anim.SetBool("sitting", false);
-            }
             transform.rotation = ship.transform.rotation;
         }
         else
         {
-            if (Input.GetKey(KeyCode.UpArrow))
-            {
-                if (anim.GetBool("sitting"))
-                {
-                    anim.SetBool("sitting", false);
-                }
-                else
-                {
-                    anim.SetBool("sitting", true);
-                }
-            }
             if (Input.GetKey(KeyCode.UpArrow))
             {
                 transform.Translate(0, playerSpeed * Time.deltaTime, 0);
