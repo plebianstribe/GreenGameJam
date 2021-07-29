@@ -818,67 +818,52 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1001 &4786676381198242819
-PrefabInstance:
+--- !u!1 &1742883334
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4786676380814677298, guid: 91b51bb822f59ac469336f071a00221b, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1286684546}
-    - target: {fileID: 4786676380814677299, guid: 91b51bb822f59ac469336f071a00221b, type: 3}
-      propertyPath: m_Name
-      value: Animal
-      objectReference: {fileID: 0}
-    - target: {fileID: 4786676380814677303, guid: 91b51bb822f59ac469336f071a00221b, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4786676380814677303, guid: 91b51bb822f59ac469336f071a00221b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.880124
-      objectReference: {fileID: 0}
-    - target: {fileID: 4786676380814677303, guid: 91b51bb822f59ac469336f071a00221b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.6536455
-      objectReference: {fileID: 0}
-    - target: {fileID: 4786676380814677303, guid: 91b51bb822f59ac469336f071a00221b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4786676380814677303, guid: 91b51bb822f59ac469336f071a00221b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4786676380814677303, guid: 91b51bb822f59ac469336f071a00221b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4786676380814677303, guid: 91b51bb822f59ac469336f071a00221b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4786676380814677303, guid: 91b51bb822f59ac469336f071a00221b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4786676380814677303, guid: 91b51bb822f59ac469336f071a00221b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4786676380814677303, guid: 91b51bb822f59ac469336f071a00221b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4786676380814677303, guid: 91b51bb822f59ac469336f071a00221b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 91b51bb822f59ac469336f071a00221b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1742883335}
+  - component: {fileID: 1742883336}
+  m_Layer: 0
+  m_Name: AnimalSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1742883335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742883334}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1742883336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742883334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dde4eabf933c3c48aebfaec4ba3ee3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  padding: 0
+  animalTemplate: {fileID: 3250241172259203041, guid: 8289a17ca81562341ab94acf6b995457, type: 3}
+  spawnArea: {fileID: 1537361557}
 --- !u!1001 &4849513006804422581
 PrefabInstance:
   m_ObjectHideFlags: 0
