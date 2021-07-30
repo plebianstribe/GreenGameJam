@@ -12,6 +12,7 @@ public class AnimalCollision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Player1");
         playerName = player.name;
     }
 
