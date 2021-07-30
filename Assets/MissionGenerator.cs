@@ -62,12 +62,11 @@ public class MissionGenerator : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log("slist lengths are " + ml.missionDescriptionList.Count.ToString() + ", " + ml.missionTypeList.Count.ToString() + ", " + ml.missionTargetList.Count.ToString());
+        //Debug.Log("slist lengths are " + ml.missionDescriptionList.Count.ToString() + ", " + ml.missionTypeList.Count.ToString() + ", " + ml.missionTargetList.Count.ToString());
         if (descriptionText.text == "No more missions!")
         {
             updateMission();
         }
         checkMissionCompleted();
-        Debug.Log(missionCounter);
     }
 }

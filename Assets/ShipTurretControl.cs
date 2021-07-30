@@ -16,7 +16,6 @@ public class ShipTurretControl : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        Debug.Log(col.gameObject.name + "hit ship");
         if (col.gameObject.name == "Player1")
         {
             playerBoarding = true;
@@ -53,9 +52,8 @@ public class ShipTurretControl : MonoBehaviour
                 playerBoarding = false;
             }
             */
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.Space))
             {
-                Debug.Log(playerBoarding);
                 playerStoredPosition = player.transform.position;
                 player.transform.position = transform.position;
                 playerAnim.SetBool("sitting", true);
@@ -77,12 +75,8 @@ public class ShipTurretControl : MonoBehaviour
             {
                 transform.Rotate(0, 0, 1 * rotationSpeed * Time.deltaTime);
             }
-            if (Input.GetKey(KeyCode.DownArrow))
+            if (Input.GetKey(KeyCode.Space))
             {
-                Debug.Log(playerBoarding);
-                //Vector2 currentDir;
-                //currentDir = new Vector2(2, 2);
-             
                 playerAnim.SetBool("sitting", false);
                 player.transform.rotation = Quaternion.Euler(0, 0, 0);
                 player.transform.position = playerStoredPosition;
