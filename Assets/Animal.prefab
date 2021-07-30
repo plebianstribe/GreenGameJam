@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 3250241172259203043}
   - component: {fileID: 3250241173610436947}
   - component: {fileID: 3250241173610436944}
+  - component: {fileID: -1001866744456445116}
   m_Layer: 0
   m_Name: Animal
   m_TagString: Animal
@@ -158,7 +159,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0036683083, y: -0.0018342137}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -169,7 +170,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.4057207, y: 0.69552314}
   m_EdgeRadius: 0
 --- !u!50 &3250241173610436947
 Rigidbody2D:
@@ -211,6 +212,25 @@ MonoBehaviour:
   trapped: 0
   health: 0
   healthBar: {fileID: 3250241172167741450}
+--- !u!95 &-1001866744456445116
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3250241172259203041}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ade00e56491f45e4c904dacc77de6804, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3250241172336394031
 GameObject:
   m_ObjectHideFlags: 0

@@ -459,7 +459,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mission 1
+  m_Text: No more missions!
 --- !u!222 &383768151
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -538,7 +538,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mission 1
+  m_Text: No more missions!
 --- !u!222 &398961574
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -881,15 +881,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a11e8b55280ac53488bc31a56f7d1744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  next:
-    isActive: 0
-    missionDescription: '"yay"'
-    missionCounter: 5
-    missionTarget: 5
-  player: {fileID: 0}
-  missionDisplay: {fileID: 707813171}
+  player: {fileID: 1794299470}
   descriptionText: {fileID: 1794997293}
   counterText: {fileID: 968394112}
+  missionType: 
+  missionCounter: 0
 --- !u!1 &859151532
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,7 +956,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '50
+  m_Text: '00
 
 '
 --- !u!222 &859151535
@@ -1100,15 +1096,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a11e8b55280ac53488bc31a56f7d1744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  next:
-    isActive: 0
-    missionDescription: 
-    missionCounter: 0
-    missionTarget: 10
-  player: {fileID: 0}
-  missionDisplay: {fileID: 1034391502}
+  player: {fileID: 1794299470}
   descriptionText: {fileID: 383768150}
   counterText: {fileID: 25406678}
+  missionType: 
+  missionCounter: 0
 --- !u!1 &1269630343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,15 +1491,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a11e8b55280ac53488bc31a56f7d1744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  next:
-    isActive: 0
-    missionDescription: 
-    missionCounter: 0
-    missionTarget: 20
-  player: {fileID: 0}
-  missionDisplay: {fileID: 1455698338}
+  player: {fileID: 1794299470}
   descriptionText: {fileID: 398961573}
   counterText: {fileID: 1404972876}
+  missionType: 
+  missionCounter: 0
 --- !u!1 &1537361557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1889,7 +1877,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '50
+  m_Text: '
 
 '
 --- !u!222 &1626449697
@@ -2023,6 +2011,7 @@ GameObject:
   - component: {fileID: 1794299471}
   - component: {fileID: 1794299473}
   - component: {fileID: 1794299472}
+  - component: {fileID: 1794299474}
   m_Layer: 5
   m_Name: MissionHeader
   m_TagString: Untagged
@@ -2091,6 +2080,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1794299470}
   m_CullTransparentMesh: 1
+--- !u!114 &1794299474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794299470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acc8f1ae08b2f984a81b6d0c18bbf3c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missionTitleList: []
+  missionDescriptionList: []
+  missionTypeList: []
+  missionTargetList: 
 --- !u!1 &1794997291
 GameObject:
   m_ObjectHideFlags: 0
@@ -2161,7 +2166,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mission 1
+  m_Text: No more missions!
 --- !u!222 &1794997294
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2180,6 +2185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2054110343}
   - component: {fileID: 2054110345}
+  - component: {fileID: 2054110346}
   - component: {fileID: 2054110344}
   m_Layer: 5
   m_Name: ScoreLabel
@@ -2249,3 +2255,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2054110342}
   m_CullTransparentMesh: 1
+--- !u!114 &2054110346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054110342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97ff43bfa82fbd840b93211dd28d10a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: 0
+  scoreText: {fileID: 859151534}
