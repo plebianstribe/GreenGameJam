@@ -5,6 +5,8 @@ using UnityEngine;
 public class TrashSpawn : MonoBehaviour
 {
     public float padding = 0;
+    public int spawn_timer = 500;
+    int current_timer;
     public GameObject trashTemplate;
     public GameObject spawnArea;
     
@@ -15,14 +17,21 @@ public class TrashSpawn : MonoBehaviour
     {
         spawnAreaWidth = spawnArea.GetComponent<SpriteRenderer>().size.x * spawnArea.transform.localScale.x * 0.5f;
         spawnAreaHeight = spawnArea.GetComponent<SpriteRenderer>().size.y * spawnArea.transform.localScale.y * 0.5f;
+
+        current_timer = spawn_timer;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (current_timer <= 0)
         {
             SpawnTrash();
+            current_timer = spawn_timer;
+        }
+        else
+        {
+            --current_timer;
         }
     }
 

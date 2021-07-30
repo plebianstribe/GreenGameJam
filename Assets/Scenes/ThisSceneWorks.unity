@@ -1234,6 +1234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   padding: 0
+  spawn_timer: 500
   trashTemplate: {fileID: 8818172337158461488, guid: f3caeca165f7e1d408afa485fed5b0bb, type: 3}
   spawnArea: {fileID: 1537361557}
 --- !u!4 &1269630345
