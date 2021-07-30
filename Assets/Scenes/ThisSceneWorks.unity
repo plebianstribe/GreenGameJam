@@ -1139,7 +1139,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -207, y: -893}
-  m_SizeDelta: {x: 400, y: 150}
+  m_SizeDelta: {x: 400, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1193084968
 MonoBehaviour:
@@ -1190,12 +1190,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '1) Play with the arrow keys
-
-    2) Press spacebar to mount and dismount
-    ship
-
-    3) Earn highscores!'
+  m_Text: "1) Swim around with the arrow keys\n2) Press spacebar to mount ship\n3)
+    Control the ship with <A> and <D>\n4) Press <downArrow> to dismount \n5) Earn
+    highscores!"
 --- !u!222 &1193084970
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1556,7 +1553,7 @@ GameObject:
   - component: {fileID: 1455698339}
   - component: {fileID: 1455698340}
   m_Layer: 5
-  m_Name: Mission 3
+  m_Name: Mission3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2038,6 +2035,7 @@ MonoBehaviour:
   padding: 0
   animalTemplate: {fileID: 3250241172259203041, guid: 8289a17ca81562341ab94acf6b995457, type: 3}
   spawnArea: {fileID: 1537361557}
+  spawn_timer: 600
 --- !u!1 &1755757321
 GameObject:
   m_ObjectHideFlags: 0

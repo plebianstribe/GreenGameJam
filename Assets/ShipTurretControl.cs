@@ -16,6 +16,7 @@ public class ShipTurretControl : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
+        
         if (col.gameObject.name == "Player1")
         {
             playerBoarding = true;
@@ -30,6 +31,27 @@ public class ShipTurretControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (playerOnShip)
+        {
+            player.transform.position = transform.position;
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                transform.Rotate(0, 0, -1 * rotationSpeed * Time.deltaTime);
+            }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+                transform.Rotate(0, 0, 1 * rotationSpeed * Time.deltaTime);
+            }
+            if (Input.GetKey(KeyCode.DownArrow))
+            {
+                playerAnim.SetBool("sitting", false);
+                player.transform.rotation = Quaternion.Euler(0, 0, 0);
+                player.transform.position = playerStoredPosition;
+                playerOnShip = false;
+                playerBoarding = false;
+            }
+
+        }
         if (playerBoarding)
         {
             /* Some odd code for Movement control
@@ -62,28 +84,6 @@ public class ShipTurretControl : MonoBehaviour
             }
             //player anim is sitting
             //player position center
-
-        }
-        if (playerOnShip)
-        {
-            player.transform.position = transform.position;
-            if (Input.GetKey(KeyCode.LeftArrow))
-            {
-                transform.Rotate(0, 0, -1 * rotationSpeed * Time.deltaTime);
-            }
-            if (Input.GetKey(KeyCode.RightArrow))
-            {
-                transform.Rotate(0, 0, 1 * rotationSpeed * Time.deltaTime);
-            }
-            if (Input.GetKey(KeyCode.Space))
-            {
-                playerAnim.SetBool("sitting", false);
-                player.transform.rotation = Quaternion.Euler(0, 0, 0);
-                player.transform.position = playerStoredPosition;
-                playerOnShip = false;
-                playerBoarding = false;
-            }
-            
         }
     }
     
